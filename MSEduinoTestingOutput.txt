@@ -3122,6 +3122,1021 @@ Test 26 out of 36
    --- Check the solder joints on the three pin header J22-5, Transistor Q2, and Resistor R12
    --- Use a multimeter to check continuity (beep test), to ground, to 3V3, and to points along the circuit path (use the schematic and board artwork as reference)
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x3 (DOWNLOAD_BOOT(UART0/UART1/SDIO_REI_REO_V2))
+waiting for download
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x3 (DOWNLOAD_BOOT(UART0/UART1/SDIO_REI_REO_V2))
+waiting for download
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0030,len:4744
+load:0x40078000,len:15672
+load:0x40080400,len:3164
+entry 0x4008059c
+MSEduino V6.3 Test Program
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!                                                                                                                                                                          !!
+!!     NOTE: Care must be taken when testing and using the ESP32 as IT IS NOT 5 V tolerant.                                                                                 !!
+!!     You will DAMAGE the ESP32 if you connect 5 V to any of its pins (the only exception is the Vin pin)                                                                  !!
+!!                                                                                                                                                                          !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+ Board Testing 
+ Perform these tests with only a USB cable, DO NOT connect battery unless otherwise noted
+ To start, slide all DIP Switches (S1) off (slide towards resistors)
+ Enter "C"ontinue to next instruction
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Test 1 out of 36
+ SMART LEDs Test         Next Test: Push Button 1 Test
+Enter "C"ontinue to next instruction,"B"ack to go beginning of last Test, "S"kip to the next Test or "Q"uit
+
+ Instructions:
+   - Slide DIP Switch S1-4 to ON, then enter "C" 
+   - SMART LED1 (look for label on board) should change colours
+ Enter "C"ontinue to end this test.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Test 2 out of 36
+ Push Button 1 Test         Next Test: DIP Switch S1-1 Test
+ Enter "C"ontinue to next instruction,"B"ack to go beginning of last Test, "S"kip to the next Test or "Q"uit
+
+ Instructions: 
+   - The Serial Monitor will update on Push Button 1 change of state. 
+   - Slide DIP Switch S1-4 to off then enter "C" 
+ Enter "C"ontinue to end this test.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Test 3 out of 36
+ DIP Switch S1-1 Test         Next Test: DIP Switch S1-2 Test
+ Enter "C"ontinue to next instruction,"B"ack to go beginning of last Test, "S"kip to the next Test or "Q"uit
+
+ Instructions:
+   - The Serial Monitor will update on DIP Switch S1-1 change of state. 
+   - Slide DIP Switch S1-1 on and off, a couple of times
+ Enter "C"ontinue to end this test.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+E (27362) gpio: gpio_pullup_en(78): GPIO number error (input-only pad has no internal PU)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Test 4 out of 36
+ DIP Switch S1-2 Test         Next Test: Potentiometer R1 Test
+ Enter "C"ontinue to next instruction,"B"ack to go beginning of last Test, "S"kip to the next Test or "Q"uit
+
+ Instructions:
+   - The Serial Monitor will update on DIP Switch S1-2 change of state. 
+   - Slide DIP Switch S1-1 to off 
+   - Slide DIP Switch S1-2 on and off, a couple of times
+ Enter "C"ontinue to end this test.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+E (27918) gpio: gpio_pullup_en(78): GPIO number error (input-only pad has no internal PU)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Test 5 out of 36
+ Potentiometer R1 Test        Next Test: Analog Input AD1-3 Test
+ Enter "C"ontinue to next instruction,"B"ack to go beginning of last Test, "S"kip to the next Test or "Q"uit
+
+ Instructions:
+   - Slide DIP Switch S1-2 to off and DIP Switch S1-3 to on, then enter "C" 
+       NOTE: Once you are finished with this test you will need to enter "C" to stop the scrolling data.
+             The Serial Monitor will display Potentiometer R1 values as you adjust the potentiometer.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Test 6 out of 36
+ Analog Input AD1-3 Test        Next Test: Analog Input AD1-6 Test
+ Enter "C"ontinue to next instruction,"B"ack to go beginning of last Test, "S"kip to the next Test or "Q"uit
+
+ Instructions:
+   - Leave DIP Switch S1-3 on
+   - Take one of your supplied receptacle to receptacle wires and put one end on the three pin header J39 pin closest to the inside of board
+   - Connect the other end to the three pin header J36 pin closest to the inside of board, then enter "C" 
+       NOTE: Once you are finished with this test you will need to enter "C" to stop the scrolling data.
+             The Serial Monitor will display Potentiometer R1 values as you adjust the potentiometer.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Test 7 out of 36
+ Analog Input AD1-6 Test        Next Test: Analog Input AD1-7 Test
+ Enter "C"ontinue to next instruction,"B"ack to go beginning of last Test, "S"kip to the next Test or "Q"uit
+
+ Instructions:
+   - Leave the wire jumper on the three pin header J36 pin closest to the inside of board connected
+   - Connect the other end to the three pin header J34 pin closest to the inside of board, then enter "C" 
+       NOTE: Once you are finished with this test you will need to enter "C" to stop the scrolling data.
+             The Serial Monitor will display Potentiometer R1 values as you adjust the potentiometer.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Test 8 out of 36
+ Analog Input AD1-7 Test        Next Test: Analog Input AD1-4 Test
+ Enter "C"ontinue to next instruction,"B"ack to go beginning of last Test, "S"kip to the next Test or "Q"uit
+
+ Instructions:
+   - Leave the wire jumper on the three pin header J36 pin closest to the inside of board connected
+   - Connect the other end to the three pin header J35 pin closest to the inside of board, then enter "C" 
+       NOTE: Once you are finished with this test you will need to enter "C" to stop the scrolling data.
+             The Serial Monitor will display Potentiometer R1 values as you adjust the potentiometer.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Test 9 out of 36
+ Analog Input AD1-4 Test        Next Test: Analog Input AD1-5 Test
+ Enter "C"ontinue to next instruction,"B"ack to go beginning of last Test, "S"kip to the next Test or "Q"uit
+
+ Instructions:
+   - Leave the wire jumper on J36 pin closest to the inside of board connected
+   - Connect the other end to J32 pin closest to the inside of board, then enter "C" 
+       NOTE: Once you are finished with this test you will need to enter "C" to stop the scrolling data.
+             The Serial Monitor will display Potentiometer R1 values as you adjust the potentiometer.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Analog Input AD1-4  = 750
+Analog Input AD1-4  = 60
+Analog Input AD1-4  = 49
+Analog Input AD1-4  = 52
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 53
+Analog Input AD1-4  = 50
+Analog Input AD1-4  = 50
+Analog Input AD1-4  = 50
+Analog Input AD1-4  = 55
+Analog Input AD1-4  = 56
+Analog Input AD1-4  = 54
+Analog Input AD1-4  = 54
+Analog Input AD1-4  = 57
+Analog Input AD1-4  = 54
+Analog Input AD1-4  = 53
+Analog Input AD1-4  = 53
+Analog Input AD1-4  = 49
+Analog Input AD1-4  = 54
+Analog Input AD1-4  = 55
+Analog Input AD1-4  = 50
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 50
+Analog Input AD1-4  = 52
+Analog Input AD1-4  = 53
+Analog Input AD1-4  = 50
+Analog Input AD1-4  = 53
+Analog Input AD1-4  = 53
+Analog Input AD1-4  = 53
+Analog Input AD1-4  = 55
+Analog Input AD1-4  = 53
+Analog Input AD1-4  = 54
+Analog Input AD1-4  = 54
+Analog Input AD1-4  = 51
+Analog Input AD1-4  = 52
+Analog Input AD1-4  = 50
+Analog Input AD1-4  = 57
+Analog Input AD1-4  = 51
+Analog Input AD1-4  = 51
+Analog Input AD1-4  = 52
+Analog Input AD1-4  = 53
+Analog Input AD1-4  = 54
+Analog Input AD1-4  = 58
+Analog Input AD1-4  = 53
+Analog Input AD1-4  = 51
+Analog Input AD1-4  = 57
+Analog Input AD1-4  = 58
+Analog Input AD1-4  = 58
+Analog Input AD1-4  = 61
+Analog Input AD1-4  = 62
+Analog Input AD1-4  = 61
+Analog Input AD1-4  = 57
+Analog Input AD1-4  = 57
+Analog Input AD1-4  = 54
+Analog Input AD1-4  = 51
+Analog Input AD1-4  = 49
+Analog Input AD1-4  = 51
+Analog Input AD1-4  = 54
+Analog Input AD1-4  = 53
+Analog Input AD1-4  = 51
+Analog Input AD1-4  = 49
+Analog Input AD1-4  = 53
+Analog Input AD1-4  = 58
+Analog Input AD1-4  = 51
+Analog Input AD1-4  = 50
+Analog Input AD1-4  = 54
+Analog Input AD1-4  = 49
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 51
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 49
+Analog Input AD1-4  = 50
+Analog Input AD1-4  = 53
+Analog Input AD1-4  = 57
+Analog Input AD1-4  = 51
+Analog Input AD1-4  = 57
+Analog Input AD1-4  = 50
+Analog Input AD1-4  = 51
+Analog Input AD1-4  = 54
+Analog Input AD1-4  = 53
+Analog Input AD1-4  = 53
+Analog Input AD1-4  = 51
+Analog Input AD1-4  = 49
+Analog Input AD1-4  = 53
+Analog Input AD1-4  = 53
+Analog Input AD1-4  = 52
+Analog Input AD1-4  = 52
+Analog Input AD1-4  = 52
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 49
+Analog Input AD1-4  = 55
+Analog Input AD1-4  = 54
+Analog Input AD1-4  = 49
+Analog Input AD1-4  = 58
+Analog Input AD1-4  = 55
+Analog Input AD1-4  = 53
+Analog Input AD1-4  = 50
+Analog Input AD1-4  = 49
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 51
+Analog Input AD1-4  = 50
+Analog Input AD1-4  = 54
+Analog Input AD1-4  = 51
+Analog Input AD1-4  = 54
+Analog Input AD1-4  = 57
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 50
+Analog Input AD1-4  = 50
+Analog Input AD1-4  = 50
+Analog Input AD1-4  = 49
+Analog Input AD1-4  = 50
+Analog Input AD1-4  = 50
+Analog Input AD1-4  = 49
+Analog Input AD1-4  = 51
+Analog Input AD1-4  = 55
+Analog Input AD1-4  = 54
+Analog Input AD1-4  = 52
+Analog Input AD1-4  = 49
+Analog Input AD1-4  = 52
+Analog Input AD1-4  = 51
+Analog Input AD1-4  = 52
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 58
+Analog Input AD1-4  = 55
+Analog Input AD1-4  = 52
+Analog Input AD1-4  = 55
+Analog Input AD1-4  = 50
+Analog Input AD1-4  = 49
+Analog Input AD1-4  = 56
+Analog Input AD1-4  = 53
+Analog Input AD1-4  = 57
+Analog Input AD1-4  = 53
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 45
+Analog Input AD1-4  = 47
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 46
+Analog Input AD1-4  = 43
+Analog Input AD1-4  = 43
+Analog Input AD1-4  = 47
+Analog Input AD1-4  = 47
+Analog Input AD1-4  = 45
+Analog Input AD1-4  = 45
+Analog Input AD1-4  = 47
+Analog Input AD1-4  = 49
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 44
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 46
+Analog Input AD1-4  = 46
+Analog Input AD1-4  = 42
+Analog Input AD1-4  = 44
+Analog Input AD1-4  = 45
+Analog Input AD1-4  = 41
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 43
+Analog Input AD1-4  = 46
+Analog Input AD1-4  = 47
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 45
+Analog Input AD1-4  = 45
+Analog Input AD1-4  = 46
+Analog Input AD1-4  = 47
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 43
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 49
+Analog Input AD1-4  = 38
+Analog Input AD1-4  = 46
+Analog Input AD1-4  = 44
+Analog Input AD1-4  = 46
+Analog Input AD1-4  = 45
+Analog Input AD1-4  = 45
+Analog Input AD1-4  = 45
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 45
+Analog Input AD1-4  = 46
+Analog Input AD1-4  = 466
+Analog Input AD1-4  = 1726
+Analog Input AD1-4  = 1309
+Analog Input AD1-4  = 994
+Analog Input AD1-4  = 69
+Analog Input AD1-4  = 595
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 57
+Analog Input AD1-4  = 49
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 52
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 49
+Analog Input AD1-4  = 50
+Analog Input AD1-4  = 49
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 47
+Analog Input AD1-4  = 54
+Analog Input AD1-4  = 55
+Analog Input AD1-4  = 55
+Analog Input AD1-4  = 55
+Analog Input AD1-4  = 57
+Analog Input AD1-4  = 54
+Analog Input AD1-4  = 58
+Analog Input AD1-4  = 53
+Analog Input AD1-4  = 58
+Analog Input AD1-4  = 58
+Analog Input AD1-4  = 59
+Analog Input AD1-4  = 56
+Analog Input AD1-4  = 55
+Analog Input AD1-4  = 50
+Analog Input AD1-4  = 51
+Analog Input AD1-4  = 49
+Analog Input AD1-4  = 50
+Analog Input AD1-4  = 51
+Analog Input AD1-4  = 46
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 45
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 45
+Analog Input AD1-4  = 51
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 49
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 47
+Analog Input AD1-4  = 50
+Analog Input AD1-4  = 46
+Analog Input AD1-4  = 50
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 51
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 50
+Analog Input AD1-4  = 49
+Analog Input AD1-4  = 51
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 51
+Analog Input AD1-4  = 46
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 51
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 47
+Analog Input AD1-4  = 50
+Analog Input AD1-4  = 49
+Analog Input AD1-4  = 50
+Analog Input AD1-4  = 52
+Analog Input AD1-4  = 51
+Analog Input AD1-4  = 47
+Analog Input AD1-4  = 51
+Analog Input AD1-4  = 49
+Analog Input AD1-4  = 51
+Analog Input AD1-4  = 49
+Analog Input AD1-4  = 49
+Analog Input AD1-4  = 51
+Analog Input AD1-4  = 51
+Analog Input AD1-4  = 51
+Analog Input AD1-4  = 49
+Analog Input AD1-4  = 49
+Analog Input AD1-4  = 58
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 47
+Analog Input AD1-4  = 53
+Analog Input AD1-4  = 51
+Analog Input AD1-4  = 53
+Analog Input AD1-4  = 57
+Analog Input AD1-4  = 57
+Analog Input AD1-4  = 51
+Analog Input AD1-4  = 53
+Analog Input AD1-4  = 49
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 49
+Analog Input AD1-4  = 49
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 49
+Analog Input AD1-4  = 53
+Analog Input AD1-4  = 51
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 54
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 46
+Analog Input AD1-4  = 50
+Analog Input AD1-4  = 46
+Analog Input AD1-4  = 50
+Analog Input AD1-4  = 52
+Analog Input AD1-4  = 50
+Analog Input AD1-4  = 52
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 50
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 52
+Analog Input AD1-4  = 50
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 53
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 49
+Analog Input AD1-4  = 55
+Analog Input AD1-4  = 50
+Analog Input AD1-4  = 54
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 50
+Analog Input AD1-4  = 56
+Analog Input AD1-4  = 193
+Analog Input AD1-4  = 183
+Analog Input AD1-4  = 54
+Analog Input AD1-4  = 51
+Analog Input AD1-4  = 49
+Analog Input AD1-4  = 53
+Analog Input AD1-4  = 54
+Analog Input AD1-4  = 53
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 51
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 51
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 50
+Analog Input AD1-4  = 60
+Analog Input AD1-4  = 50
+Analog Input AD1-4  = 50
+Analog Input AD1-4  = 54
+Analog Input AD1-4  = 54
+Analog Input AD1-4  = 52
+Analog Input AD1-4  = 49
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 49
+Analog Input AD1-4  = 49
+Analog Input AD1-4  = 50
+Analog Input AD1-4  = 49
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 50
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 51
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 51
+Analog Input AD1-4  = 47
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 47
+Analog Input AD1-4  = 49
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 46
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 49
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 49
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 49
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 52
+Analog Input AD1-4  = 50
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 49
+Analog Input AD1-4  = 49
+Analog Input AD1-4  = 47
+Analog Input AD1-4  = 52
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 49
+Analog Input AD1-4  = 49
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 49
+Analog Input AD1-4  = 52
+Analog Input AD1-4  = 50
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 50
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 45
+Analog Input AD1-4  = 47
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 47
+Analog Input AD1-4  = 47
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 46
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 51
+Analog Input AD1-4  = 43
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 44
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 47
+Analog Input AD1-4  = 46
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 44
+Analog Input AD1-4  = 47
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 45
+Analog Input AD1-4  = 42
+Analog Input AD1-4  = 46
+Analog Input AD1-4  = 45
+Analog Input AD1-4  = 46
+Analog Input AD1-4  = 46
+Analog Input AD1-4  = 41
+Analog Input AD1-4  = 42
+Analog Input AD1-4  = 46
+Analog Input AD1-4  = 47
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 43
+Analog Input AD1-4  = 47
+Analog Input AD1-4  = 46
+Analog Input AD1-4  = 45
+Analog Input AD1-4  = 41
+Analog Input AD1-4  = 44
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 46
+Analog Input AD1-4  = 46
+Analog Input AD1-4  = 45
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 46
+Analog Input AD1-4  = 45
+Analog Input AD1-4  = 42
+Analog Input AD1-4  = 43
+Analog Input AD1-4  = 44
+Analog Input AD1-4  = 47
+Analog Input AD1-4  = 42
+Analog Input AD1-4  = 43
+Analog Input AD1-4  = 43
+Analog Input AD1-4  = 42
+Analog Input AD1-4  = 45
+Analog Input AD1-4  = 43
+Analog Input AD1-4  = 47
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 45
+Analog Input AD1-4  = 46
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 46
+Analog Input AD1-4  = 44
+Analog Input AD1-4  = 40
+Analog Input AD1-4  = 47
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 47
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 46
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 43
+Analog Input AD1-4  = 42
+Analog Input AD1-4  = 43
+Analog Input AD1-4  = 47
+Analog Input AD1-4  = 45
+Analog Input AD1-4  = 46
+Analog Input AD1-4  = 42
+Analog Input AD1-4  = 44
+Analog Input AD1-4  = 46
+Analog Input AD1-4  = 44
+Analog Input AD1-4  = 41
+Analog Input AD1-4  = 42
+Analog Input AD1-4  = 46
+Analog Input AD1-4  = 42
+Analog Input AD1-4  = 46
+Analog Input AD1-4  = 44
+Analog Input AD1-4  = 44
+Analog Input AD1-4  = 47
+Analog Input AD1-4  = 46
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 45
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 43
+Analog Input AD1-4  = 42
+Analog Input AD1-4  = 45
+Analog Input AD1-4  = 43
+Analog Input AD1-4  = 46
+Analog Input AD1-4  = 226
+Analog Input AD1-4  = 272
+Analog Input AD1-4  = 42
+Analog Input AD1-4  = 42
+Analog Input AD1-4  = 44
+Analog Input AD1-4  = 42
+Analog Input AD1-4  = 45
+Analog Input AD1-4  = 45
+Analog Input AD1-4  = 44
+Analog Input AD1-4  = 46
+Analog Input AD1-4  = 46
+Analog Input AD1-4  = 43
+Analog Input AD1-4  = 41
+Analog Input AD1-4  = 44
+Analog Input AD1-4  = 41
+Analog Input AD1-4  = 41
+Analog Input AD1-4  = 47
+Analog Input AD1-4  = 44
+Analog Input AD1-4  = 46
+Analog Input AD1-4  = 45
+Analog Input AD1-4  = 43
+Analog Input AD1-4  = 47
+Analog Input AD1-4  = 44
+Analog Input AD1-4  = 44
+Analog Input AD1-4  = 45
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 43
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 46
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 51
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 49
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 47
+Analog Input AD1-4  = 46
+Analog Input AD1-4  = 46
+Analog Input AD1-4  = 43
+Analog Input AD1-4  = 46
+Analog Input AD1-4  = 46
+Analog Input AD1-4  = 42
+Analog Input AD1-4  = 45
+Analog Input AD1-4  = 45
+Analog Input AD1-4  = 45
+Analog Input AD1-4  = 43
+Analog Input AD1-4  = 43
+Analog Input AD1-4  = 45
+Analog Input AD1-4  = 43
+Analog Input AD1-4  = 46
+Analog Input AD1-4  = 44
+Analog Input AD1-4  = 42
+Analog Input AD1-4  = 45
+Analog Input AD1-4  = 37
+Analog Input AD1-4  = 45
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 46
+Analog Input AD1-4  = 46
+Analog Input AD1-4  = 47
+Analog Input AD1-4  = 44
+Analog Input AD1-4  = 42
+Analog Input AD1-4  = 47
+Analog Input AD1-4  = 46
+Analog Input AD1-4  = 46
+Analog Input AD1-4  = 42
+Analog Input AD1-4  = 42
+Analog Input AD1-4  = 42
+Analog Input AD1-4  = 46
+Analog Input AD1-4  = 39
+Analog Input AD1-4  = 46
+Analog Input AD1-4  = 41
+Analog Input AD1-4  = 41
+Analog Input AD1-4  = 46
+Analog Input AD1-4  = 44
+Analog Input AD1-4  = 45
+Analog Input AD1-4  = 44
+Analog Input AD1-4  = 46
+Analog Input AD1-4  = 47
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 46
+Analog Input AD1-4  = 43
+Analog Input AD1-4  = 42
+Analog Input AD1-4  = 45
+Analog Input AD1-4  = 42
+Analog Input AD1-4  = 47
+Analog Input AD1-4  = 41
+Analog Input AD1-4  = 43
+Analog Input AD1-4  = 38
+Analog Input AD1-4  = 42
+Analog Input AD1-4  = 43
+Analog Input AD1-4  = 43
+Analog Input AD1-4  = 44
+Analog Input AD1-4  = 44
+Analog Input AD1-4  = 45
+Analog Input AD1-4  = 44
+Analog Input AD1-4  = 44
+Analog Input AD1-4  = 48
+Analog Input AD1-4  = 44
+Analog Input AD1-4  = 44
+Analog Input AD1-4  = 42
+Analog Input AD1-4  = 41
+Analog Input AD1-4  = 42
+Analog Input AD1-4  = 41
+Analog Input AD1-4  = 46
+Analog Input AD1-4  = 39
+Analog Input AD1-4  = 41
+Analog Input AD1-4  = 42
+Analog Input AD1-4  = 42
+Analog Input AD1-4  = 41
+Analog Input AD1-4  = 43
+Analog Input AD1-4  = 42
+Analog Input AD1-4  = 41
+Analog Input AD1-4  = 46
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Test 9 out of 36
+ Analog Input AD1-4 Test        Next Test: Analog Input AD1-5 Test
+ Enter "C"ontinue to next instruction,"B"ack to go beginning of this Test, "S"kip Next Test or "Q"uit
+
+ Instructions:
+   - The Serial Monitor should have displayed Potentiometer R1 values as you adjust the potentiometer,
+   - If not working, unplug the MSEduino from power sources (USB) and 
+   --- Check that the wire jumper is connected correctly to J36 pin closest to the inside of board
+   --- Check that the other end is connected to the three pin header J32 pin closest to the inside of board
+   --- Check the solder joints on the three pin header J32, and AD1-4 (physical pin 7)
+   --- Use a multimeter to check continuity (beep test), to ground, to 3V3, and to points along the circuit path (use the schematic and board artwork as reference)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Test 10 out of 36
+ Analog Input AD1-5 Test        Next Test: Analog Input AD2-8 Tes
+ Enter "C"ontinue to next instruction,"B"ack to go beginning of last Test, "S"kip to the next Test or "Q"uit
+
+ Instructions:
+   - Leave the wire jumper on the three pin header J36 pin closest to the inside of board connected
+   - Connect the other end to the three pin header J33 pin closest to the inside of board, then enter "C" 
+       NOTE: Once you are finished with this test you will need to enter "C" to stop the scrolling data.
+             The Serial Monitor will display Potentiometer R1 values as you adjust the potentiometer.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Test 11 out of 36
+ Analog Input AD2-8 Test        Next Test: Analog Input AD2-1 Test
+ Enter "C"ontinue to next instruction,"B"ack to go beginning of last Test, "S"kip to the next Test or "Q"uit
+
+ Instructions:
+   - Leave the wire jumper on the three pin header J36 pin closest to the inside of board connected
+   - Connect the other end to the three pin header J25 pin closest to the inside of board, then enter "C" 
+       NOTE: Once you are finished with this test you will need to enter "C" to stop the scrolling data.
+             The Serial Monitor will display Potentiometer R1 values as you adjust the potentiometer.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Test 12 out of 36
+ Analog Input AD2-2 Test        Next Test: Analog Input AD2-9 Test
+ Enter "C"ontinue to next instruction,"B"ack to go beginning of last Test, "S"kip to the next Test or "Q"uit
+
+ Instructions:
+   - Leave the wire jumper on the three pin header J36 pin closest to the inside of board connected
+   - Connect the other end to the three pin header J2 pin closest to the inside of board, then enter "C" 
+       NOTE: Once you are finished with this test you will need to enter "C" to stop the scrolling data.
+             The Serial Monitor will display Potentiometer R1 values as you adjust the potentiometer.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Test 13 out of 36
+ Analog Input AD2-9 Test        Next Test: Analog Input AD2-7 Test
+ Enter "C"ontinue to next instruction,"B"ack to go beginning of last Test, "S"kip to the next Test or "Q"uit
+
+ Instructions:
+   - Leave the wire jumper on the three pin header J36 pin closest to the inside of board connected
+   - Connect the other end to the three pin header J26 pin closest to the inside of board, then enter "C" 
+       NOTE: Once you are finished with this test you will need to enter "C" to stop the scrolling data.
+             The Serial Monitor will display Potentiometer R1 values as you adjust the potentiometer.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Test 14 out of 36
+ Analog Input AD2-7 Test        Next Test: Analog Input AD2-6 Test
+ Enter "C"ontinue to next instruction,"B"ack to go beginning of last Test, "S"kip to the next Test or "Q"uit
+
+   - Leave the wire jumper on the three pin header J36 pin closest to the inside of board connected
+   - Connect the other end to the three pin header J27 pin closest to the inside of board, then enter "C" 
+       NOTE: Once you are finished with this test you will need to enter "C" to stop the scrolling data.
+             The Serial Monitor will display Potentiometer R1 values as you adjust the potentiometer.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Test 15 out of 36
+ Analog Input AD2-6 Test        Next Test: Analog Input AD2-5 Test
+ Enter "C"ontinue to next instruction,"B"ack to go beginning of last Test, "S"kip to the next Test or "Q"uit
+
+ Instructions:
+   - Leave the wire jumper on the three pin header J36 pin closest to the inside of board connected
+   - Connect the other end to the three pin header J14 pin closest to the inside of board, then enter "C" 
+       NOTE: Once you are finished with this test you will need to enter "C" to stop the scrolling data.
+             The Serial Monitor will display Potentiometer R1 values as you adjust the potentiometer.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Test 16 out of 36
+ Analog Input AD2-5 Test        Next Test: Analog Input AD2-4 Test
+ Enter "C"ontinue to next instruction,"B"ack to go beginning of last Test, "S"kip to the next Test or "Q"uit
+
+ Instructions:
+   - Leave the wire jumper on the three pin header J36 pin closest to the inside of board connected
+   - Connect the other end to the three pin header J12 pin closest to the inside of board, then enter "C" 
+       NOTE: Once you are finished with this test you will need to enter "C" to stop the scrolling data.
+             The Serial Monitor will display Potentiometer R1 values as you adjust the potentiometer.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Test 17 out of 36
+ Analog Input AD2-4 Test        Next Test: Analog Input AD2-0 Test
+ Enter "C"ontinue to next instruction,"B"ack to go beginning of last Test, "S"kip to the next Test or "Q"uit
+
+ Instructions:
+   - Leave the wire jumper on the three pin header J36 pin closest to the inside of board connected
+   - Connect the other end to the three pin header J13 pin closest to the inside of board, then enter "C" 
+       NOTE: Once you are finished with this test you will need to enter "C" to stop the scrolling data.
+             The Serial Monitor will display Potentiometer R1 values as you adjust the potentiometer.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Test 18 out of 36
+ Analog Input AD2-0 Test        Next Test: Analog Input AD2-3 Test
+ Enter "C"ontinue to next instruction,"B"ack to go beginning of last Test, "S"kip to the next Test or "Q"uit
+
+ Instructions:
+   - Leave the wire jumper on the three pin header J36 pin closest to the inside of board connected
+   - Connect the other end to the three pin header J4 pin closest to the inside of board, then enter "C" 
+       NOTE: Once you are finished with this test you will need to enter "C" to stop the scrolling data.
+             The Serial Monitor will display Potentiometer R1 values as you adjust the potentiometer.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Test 19 out of 36
+ Analog Input AD2-3 Test        Next Test: Digital Input GPIO19
+ Enter "C"ontinue to next instruction,"B"ack to go beginning of last Test, "S"kip to the next Test or "Q"uit
+
+ Instructions:
+   - Leave the wire jumper on the three pin header J36 pin closest to the inside of board connected
+   - Connect the other end to the three pin header J15 pin closest to the inside of board, then enter "C" 
+       NOTE: Once you are finished with this test you will need to enter "C" to stop the scrolling data.
+             The Serial Monitor will display Potentiometer R1 values as you adjust the potentiometer.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Test 20 out of 36
+ Digital Input GPIO19 Test        Next Test: Digital Input GPIO18
+ Enter "C"ontinue to next instruction,"B"ack to go beginning of last Test, "S"kip to the next Test or "Q"uit
+
+ Instructions:
+   - Slide DIP Switch S1-3 to off and remove jumper wire
+   - Take the receptacle to receptacle wire and put one end on the three pin header J2 pin closest to the inside of board
+   - Connect the other end to the three pin header J19 pin closest to the inside of board, then enter "C" 
+   - The Serial Monitor will update on Push Button PB1 change of state. 
+ Enter "C"ontinue to end this test.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Test 21 out of 36
+ Digital Input GPIO18 Test        Next Test: Digital Input GPIO5
+ Enter "C"ontinue to next instruction,"B"ack to go beginning of last Test, "S"kip to the next Test or "Q"uit
+
+ Instructions:
+   - Leave the receptacle to receptacle wire on three pin header J2 pin closest to the inside of board
+   - Connect the other end to the three pin header J18 pin closest to the inside of board, then enter "C" 
+   - The Serial Monitor will update on Push Button PB1 change of state. 
+ Enter "C"ontinue to end this test.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Test 22 out of 36
+ Digital Input GPIO5 Test        Next Test: I2C 3V Port Pin Test
+ Enter "C"ontinue to next instruction,"B"ack to go beginning of last Test, "S"kip to the next Test or "Q"uit
+
+ Instructions:
+   - Leave the receptacle to receptacle wire on three pin header J2 pin closest to the inside of board
+   - Connect the other end to the three pin header J5 pin closest to the inside of board, then enter "C" 
+   - The Serial Monitor will update on Push Button PB1 change of state. 
+ Enter "C"ontinue to end this test.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!                                                                                                                                                                          !!
+!!     NOTE: Care must be taken when testing and using the ESP32 as IT IS NOT 5 V tolerant.                                                                                 !!
+!!     You will DAMAGE the ESP32 if you connect 5 V to any of its pins (the only exception is the Vin pin)                                                                  !!
+!!                                                                                                                                                                          !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Test 23 out of 36
+ I2C 3V Port Pin SDA Test        Next Test: I2C 3V Port Pin CLK
+ Enter "C"ontinue to next instruction,"B"ack to go beginning of last Test, "S"kip to the next Test or "Q"uit
+
+ Instructions:
+  !!! This is where you might blow your ESP32 if you are not careful connecting to the correct pins!!!! 
+   - Leave the wire jumper on the three pin header J2 pin closest to the inside of board connected
+   - Move the other end to three pin header J21 pin closest to the inside of board, then enter "C" 
+   - The Serial Monitor will update on Push Button PB1 change of state. 
+ Enter "C"ontinue to end this test.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Test 24 out of 36
+ I2C 3V Port Pin CLK Test        Next Test: I2C 5V Port Pin Test
+ Enter "C"ontinue to next instruction,"B"ack to go beginning of last Test, "S"kip to the next Test or "Q"uit
+
+ Instructions:
+   - Leave the wire jumper on the one end of the three pin header J2 pin closest to the inside of board
+   - Move the other end to three pin header J22 pin closest to the inside of board, then enter "C" 
+   - The Serial Monitor will update on Push Button PB1 change of state. 
+ Enter "C"ontinue to end this test.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!                                                                                                                                                                          !!
+!!     NOTE: Care must be taken when testing and using the ESP32 as IT IS NOT 5 V tolerant.                                                                                 !!
+!!     You will DAMAGE the ESP32 if you connect 5 V to any of its pins (the only exception is the Vin pin)                                                                  !!
+!!                                                                                                                                                                          !!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Test 25 out of 36
+ I2C DA 5V Port Pin Test        Next Test: I2C CLK 5V Port Pin Test
+ Enter "C"ontinue to next instruction,"B"ack to go beginning of last Test, "S"kip to the next Test or "Q"uit
+
+ Instructions:
+  !!! This is where you might blow you're ESP32 if your not careful connecting to the correct pins  !!!! 
+   - Move the wire jumper from J2 pin closest to the inside of board to the J21-5 pin closest to the inside of board
+   - Move the wire jumper from J22 pin closest to the inside of the board to J21-5 pin closest to the outside of board.
+   - The Serial Monitor will update when wire jumper is removed from ground pin and replaced on ground pin (pin 21-5 outside)
+ Enter "C"ontinue to end this test.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Test 26 out of 36
+ I2C CLK 5V Port Pin Test        Next Test:Servo test GPIO26
+ Enter "C"ontinue to next instruction,"B"ack to go beginning of last Test, "S"kip to the next Test or "Q"uit
+
+ Instructions:
+  !!! This is where you might blow you're ESP32 if your not careful connecting to the correct pins  !!!! 
+   - Move the wire jumper from the J21-5 pin closest to the inside of board to the J22-5 pin closest to the inside of board
+   - Leave the wire jumper on three pin header J21-5 pin on outside of board.
+   - The Serial Monitor will update when wire jumper is removed from ground pin and replaced on ground pin (pin 21-5 outside)
+ Enter "C"ontinue to end this test.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -3138,6 +4153,99 @@ Test 27 out of 36
    - The Serial Monitor should display the servo angle and the servo should swing forward then backwards.
        NOTE: Once you are finished with this test you will need to enter "C" to stop the scrolling data.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Servo moves to zero degrees.
+Servo moves to 180 degrees.
+Servo moves to zero degrees.
+Servo moves to 180 degrees.
+Servo moves to zero degrees.
+Servo moves to 180 degrees.
+Servo moves to zero degrees.
+Servo moves to 180 degrees.
+Servo moves to zero degrees.
+Servo moves to 180 degrees.
+Servo moves to zero degrees.
+Servo moves to 180 degrees.
+Servo moves to zero degrees.
+Servo moves to 180 degrees.
+Servo moves to zero degrees.
+Servo moves to 180 degrees.
+Servo moves to zero degrees.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Test 27 out of 36
+ Servo test GPIO26        Next Test: Servo test GPIO27
+ Enter "C"ontinue to next instruction,"B"ack to go beginning of this Test, "S"kip Next Test or "Q"uit
+
+ Instructions:
+   - If test worked enter "C" 
+   - If did not work, unplug the MSEduino from power sources (USB) and 
+   --- Check that the servo is properly connected to the three pin header J26, with the brown wire connected to the pin at edge of board and the orange wire to the pin
+       closest to the inside of board
+   --- Check the solder joints on the three pin header J26, and GPIO26 (physical pin 10)
+   --- Use a multimeter to check continuity (beep test), to ground, to 3V3, and to points along the circuit path (use the schematic and board artwork as reference)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+I2C 5V Port Pin SCLK, replace ground end wire to test
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Test 26 out of 36
+ I2C CLK 5V Port Pin Test        Next Test: Servo test GPIO26
+ Enter "C"ontinue to next instruction,"B"ack to go beginning of this Test, "S"kip Next Test or "Q"uit
+
+ Instructions:
+   - If test worked enter "C" 
+   - If did not work, unplug the MSEduino from power sources (USB) and 
+   --- Check that the wire jumper is connected correctly to outside pin of the three pin header J21-5.
+   --- Check that the other end is connected to three pin header J22-5, connect to pin closest to inside to board.
+   --- Make sure that Transistor Q2 is soldered in the correct orientation
+   --- Check the solder joints on the three pin header J22-5, Transistor Q2, and Resistor R12
+   --- Use a multimeter to check continuity (beep test), to ground, to 3V3, and to points along the circuit path (use the schematic and board artwork as reference)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Test 27 out of 36
+ Servo test GPIO26        Next Test: Servo test GPIO27
+ Enter "C"ontinue to next instruction,"B"ack to go beginning of last Test, "S"kip to the next Test or "Q"uit
+
+ Instructions:
+   - Remove the receptacle to receptacle wire 
+   - Plug the MSEduino board into the Battery.
+   - Plug one of your small blue RC servos into the three pin header J26, with the brown wire connected to the pin at edge of board and the orange wire to the pin closest
+     to the inside of board
+   - then enter "C" 
+   - The Serial Monitor should display the servo angle and the servo should swing forward then backwards.
+       NOTE: Once you are finished with this test you will need to enter "C" to stop the scrolling data.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Servo moves to zero degrees.
+Servo moves to 180 degrees.
+Servo moves to zero degrees.
+Servo moves to 180 degrees.
+Servo moves to zero degrees.
+Servo moves to 180 degrees.
+Servo moves to zero degrees.
+Servo moves to 180 degrees.
+Servo moves to zero degrees.
+Servo moves to 180 degrees.
+Servo moves to zero degrees.
+Servo moves to 180 degrees.
+Servo moves to zero degrees.
+Servo moves to 180 degrees.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Test 27 out of 36
+ Servo test GPIO26        Next Test: Servo test GPIO27
+ Enter "C"ontinue to next instruction,"B"ack to go beginning of this Test, "S"kip Next Test or "Q"uit
+
+ Instructions:
+   - If test worked enter "C" 
+   - If did not work, unplug the MSEduino from power sources (USB) and 
+   --- Check that the servo is properly connected to the three pin header J26, with the brown wire connected to the pin at edge of board and the orange wire to the pin
+       closest to the inside of board
+   --- Check the solder joints on the three pin header J26, and GPIO26 (physical pin 10)
+   --- Use a multimeter to check continuity (beep test), to ground, to 3V3, and to points along the circuit path (use the schematic and board artwork as reference)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -3151,6 +4259,26 @@ Test 28 out of 36
    - then enter "C" 
    - The Serial Monitor should display the servo angle and the servo should swing forward then backwards.
        NOTE: Once you are finished with this test you will need to enter "C" to stop the scrolling data.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Servo moves to zero degrees.
+Servo moves to 180 degrees.
+Servo moves to zero degrees.
+Servo moves to 180 degrees.
+Servo moves to zero degrees.
+Servo moves to 180 degrees.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Test 28 out of 36
+ Servo test GPIO27        Next Test: Servo test GPIO13
+ Enter "C"ontinue to next instruction,"B"ack to go beginning of this Test, "S"kip Next Test or "Q"uit
+
+ Instructions:
+   - If test worked enter "C" 
+   - If did not work, unplug the MSEduino from power sources (USB) and 
+   --- Check that the servo is properly connected to the three pin header J27, with the brown wire connected to the pin at edge of board and the orange wire to the pin closest
+       to the inside of board
+   --- Check the solder joints on the three pin header J27, and GPIO27 (physical pin 11)
+   --- Use a multimeter to check continuity (beep test), to ground, to 3V3, and to points along the circuit path (use the schematic and board artwork as reference)
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -3166,6 +4294,28 @@ Test 29 out of 36
    - The Serial Monitor should display the servo angle and the servo should swing forward then backwards.
        NOTE: Once you are finished with this test you will need to enter "C" to stop the scrolling data.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Servo moves to zero degrees.
+Servo moves to 180 degrees.
+Servo moves to zero degrees.
+Servo moves to 180 degrees.
+Servo moves to zero degrees.
+Servo moves to 180 degrees.
+Servo moves to zero degrees.
+Servo moves to 180 degrees.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Test 29 out of 36
+ Servo test GPIO13        Next Test: Servo test GPIO17
+ Enter "C"ontinue to next instruction,"B"ack to go beginning of this Test, "S"kip Next Test or "Q"uit
+
+ Instructions:
+   - If test worked enter "C" 
+   - If did not work, unplug the MSEduino from power sources (USB) and 
+   --- Check that the servo is properly connected to the three pin header J13, with the brown wire connected to the pin at edge of board and the orange wire to the pin closest
+       to the inside of board
+   --- Check the solder joints on the three pin header J13, and GPIO13 (physical pin 15)
+   --- Use a multimeter to check continuity (beep test), to ground, to 3V3, and to points along the circuit path (use the schematic and board artwork as reference)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -3179,6 +4329,26 @@ Test 30 out of 36
    - then enter "C" 
    - The Serial Monitor should display the servo angle and the servo should swing forward then backwards.
        NOTE: Once you are finished with this test you will need to enter "C" to stop the scrolling data.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Servo moves to zero degrees.
+Servo moves to 180 degrees.
+Servo moves to zero degrees.
+Servo moves to 180 degrees.
+Servo moves to zero degrees.
+Servo moves to 180 degrees.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Test 30 out of 36
+ Servo test GPIO17        Next Test: Servo test GPIO16
+ Enter "C"ontinue to next instruction,"B"ack to go beginning of this Test, "S"kip Next Test or "Q"uit
+
+ Instructions:
+   - If test worked enter "C" 
+   - If did not work, unplug the MSEduino from power sources (USB) and 
+   --- Check that the servo is properly connected to the three pin header J17, with the brown wire connected to the pin at edge of board and the orange wire to the pin closest
+       to the inside of board
+   --- Check the solder joints on the three pin header J17, and GPIO17 (physical pin 28)
+   --- Use a multimeter to check continuity (beep test), to ground, to 3V3, and to points along the circuit path (use the schematic and board artwork as reference)
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -3194,6 +4364,29 @@ Test 31 out of 36
    - The Serial Monitor should display the servo angle and the servo should swing forward then backwards.
        NOTE: Once you are finished with this test you will need to enter "C" to stop the scrolling data.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Servo moves to zero degrees.
+Servo moves to 180 degrees.
+Servo moves to zero degrees.
+Servo moves to 180 degrees.
+Servo moves to zero degrees.
+Servo moves to 180 degrees.
+Servo moves to zero degrees.
+Servo moves to 180 degrees.
+Servo moves to zero degrees.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Test 31 out of 36
+ Servo test GPIO16        Next Test: Servo test GPIO4
+ Enter "C"ontinue to next instruction,"B"ack to go beginning of this Test, "S"kip Next Test or "Q"uit
+
+ Instructions:
+   - If test worked enter "C" 
+   - If did not work, unplug the MSEduino from power sources (USB) and 
+   --- Check that the servo is properly connected to the three pin header J16, with the brown wire connected to the pin at edge of board and the orange wire to the pin closest
+       to the inside of board
+   --- Check the solder joints on the three pin header J16, and GPIO16 (physical pin 27)
+   --- Use a multimeter to check continuity (beep test), to ground, to 3V3, and to points along the circuit path (use the schematic and board artwork as reference)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -3208,6 +4401,44 @@ Test 32 out of 36
    - The Serial Monitor should display the servo angle and the servo should swing forward then backwards.
        NOTE: Once you are finished with this test you will need to enter "C" to stop the scrolling data.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Servo moves to zero degrees.
+Servo moves to 180 degrees.
+Servo moves to zero degrees.
+Servo moves to 180 degrees.
+Servo moves to zero degrees.
+Servo moves to 180 degrees.
+Servo moves to zero degrees.
+Servo moves to 180 degrees.
+Servo moves to zero degrees.
+Servo moves to 180 degrees.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Test 32 out of 36
+ Servo test GPIO4        Next Test: Serial TX0 pin test GPIO1
+ Enter "C"ontinue to next instruction,"B"ack to go beginning of this Test, "S"kip Next Test or "Q"uit
+
+ Instructions:
+   - If test worked enter "C" 
+   - If did not work, unplug the MSEduino from power sources (USB) and 
+   --- Check that the servo is properly connected to the three pin header J4, with the brown wire connected to the pin at edge of board and the orange wire to the pin closest
+       to the inside of board
+   --- Check the solder joints on the three pin header J4, and GPIO4 (physical pin 26)
+   --- Use a multimeter to check continuity (beep test), to ground, to 3V3, and to points along the circuit path (use the schematic and board artwork as reference)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Test 33 out of 36
+ Serial TX0 pin test GPIO1       Next Test: Serial RX0 pin test GPIO3
+ Enter "C"ontinue to next instruction,"B"ack to go beginning of last Test, "S"kip to the next Test or "Q"uit
+
+ Instructions:
+   - Unplug and set the servo aside. 
+   - Take the receptacle to receptacle wire and put one end on the three pin header J16 pin closest to the inside of board
+   - Connect the other end to the three pin header J1 pin closest to the inside of board, then enter "C" 
+   - The Serial Monitor should display 'Output'.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
